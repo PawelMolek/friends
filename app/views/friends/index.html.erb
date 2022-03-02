@@ -1,5 +1,3 @@
-<p style="color: green"><%= notice %></p>
-
 <h1>Friend List</h1>
 
 <table class="table table-striped table-bordered table-hover">
@@ -23,7 +21,7 @@
       <td><%= friend.twitter %></td>
       <td><%= link_to "Show", friend, class:"btn btn-secondary" %></td>
       <td><%= link_to "Edit", edit_friend_path(friend), class:"btn btn-secondary" %></td>
-      <td><%= link_to "Delete", friend, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+      <td><%= button_to "Delete", friend_path(friend), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-danger" %></td>
     </tr>
   <% end %>
   </tbody>
