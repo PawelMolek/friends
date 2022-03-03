@@ -8,14 +8,15 @@ class FriendsController < ApplicationController
   def index
     @friends = Friend.all
     #
-    # #wrócić do tego tutaj aby tylko wyświetlało albo home page albo friends i usunąć z indexu weryfikację
+    # # #wrócić do tego tutaj aby tylko wyświetlało albo home page albo friends i usunąć z indexu weryfikację
     # if user_signed_in?
     #   redirect_to friends_path
     # else
-    #   redirect_to home_about_path
+    #   redirect_to root_path
     # end
   end
 
+  # if user isn't creator of this item redirect to friends
   # GET /friends/1 or /friends/1.json
   def show
     @friend = current_user.friends.find_by(id: params[:id])
