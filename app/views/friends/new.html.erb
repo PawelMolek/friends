@@ -1,9 +1,18 @@
-<h1>Add New friend</h1>
+<div class="container w-25 text-center align-content-center">
+  <div class="card">
+    <div class="card-header">
+      <h4>Add Friend</h4>
+    </div>
+    <div class="card-body">
 
-<%= render "form", friend: @friend %>
+      <%= render "form", friend: @friend %>
 
-<br />
+    </div>
+  </div>
+  <br/>
 
-<div>
-  <%= link_to "Back to friends", friends_path, class:"btn btn-dark" %>
+  <div>
+    <%= link_to "Back to friends", friends_path, class: "btn btn-dark" %>
+  </div>
 </div>
+

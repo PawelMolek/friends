@@ -1,7 +1,7 @@
-<div class="container text-center w-50 align-content-center">
+<div class="container w-25 text-center align-content-center">
   <div class="card">
     <div class="card-header">
-      <h4>Edit Profile</h4>
+      <h4>Edit</h4>
     </div>
     <div class="card-body">
 
@@ -35,10 +35,10 @@
 
   <div class="card">
     <div class="card-header text-center">
-      <h4>Cancel my account</h4>
+      <h4>Delete account</h4>
     </div>
     <div class="card-body">
-      <p class="card-text"><%= button_to "Delete account", registration_path(resource_name), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-danger" %></p>
+      <p class="card-text"><%= button_to "Delete", registration_path(resource_name), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-danger" %></p>
     </div>
   </div>
 
