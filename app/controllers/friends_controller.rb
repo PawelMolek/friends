@@ -7,6 +7,13 @@ class FriendsController < ApplicationController
   # GET /friends or /friends.json
   def index
     @friends = Friend.all
+    #
+    # #wrócić do tego tutaj aby tylko wyświetlało albo home page albo friends i usunąć z indexu weryfikację
+    # if user_signed_in?
+    #   redirect_to friends_path
+    # else
+    #   redirect_to home_about_path
+    # end
   end
 
   # GET /friends/1 or /friends/1.json
