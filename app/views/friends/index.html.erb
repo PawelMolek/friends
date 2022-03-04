@@ -26,7 +26,7 @@
                 <td><%= friend.phone %></td>
                 <td><%= friend.twitter %></td>
                 <td class="text-center"><%= link_to "Show", friend, class: "btn btn-secondary btn-sm" %></td>
-                <td class="text-center"><%= link_to "Edit", edit_friend_path(friend), class: "btn btn-secondary btn-sm" %></td>
+                <td class="text-center"><%= link_to "Edit", edit_friend_path(friend), class: "btn btn-dark btn-sm" %></td>
                 <!--          <td><%#= button_to "Delete", friend_path(friend), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-outline-danger btn-sm" %></td>-->
               </tr>
             <% end %>
@@ -39,5 +39,9 @@
   </div>
 
 <% else %>
-  <h1>You have to Sign in</h1>
+  <div class="jumbotron d-flex align-items-center min-vh-100">
+    <div class="container text-center">
+      <h1>You have to Sign in to be able to use Friends app</h1>
+    </div>
+  </div>
 <% end %>
