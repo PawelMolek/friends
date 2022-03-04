@@ -1,22 +1,40 @@
-<div class="col-md-8">
-  <div class="h-100 p-5 bg-light border rounded-3">
+<!--<div class="col-md-8">-->
+<!--  <div class="h-100 p-5 bg-light border rounded-3">-->
 
-    <h2>
-      <%= @friend.first_name %>
-      <%= @friend.last_name %>
-    </h2>
+<!--    <h2>-->
+<%#= @friend.first_name %>
+<%#= @friend.last_name %>
+<!--    </h2>-->
 
-    <br/>
+<!--    <br/>-->
 
-    <p class="lead">
-      <%= @friend.email %> |
-      <%= @friend.phone %> |
-      <%= @friend.twitter %>
-    </p>
+<!--    <p class="lead">-->
+<!--      <%#= @friend.email %> |-->
+<!--      <%#= @friend.phone %> |-->
+<%#= @friend.twitter %>
+<!--    </p>-->
 
-    <br/><br/>
+<!--    <br/><br/>-->
 
-    <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-secondary" %>
-    <%= link_to "Back", friends_path, class: "btn btn-secondary" %>
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="container w-25 text-center align-content-center">
+  <div class="card">
+    <div class="card-header">
+      <h4><%= @friend.first_name + ' ' + @friend.last_name %></h4>
+    </div>
+    <div class="card-body">
+      <p>E-mail : <%= @friend.email %></p>
+      <p>Phone : <%= @friend.phone %></p>
+      <p>Twitter : <%= @friend.twitter %></p>
+    </div>
   </div>
+
+  <br/>
+
+  <%= link_to "Edit", edit_friend_path(@friend), class: "btn btn-secondary" %>
+  <%= link_to "Back", friends_path, class: "btn btn-dark" %>
+
 </div>
