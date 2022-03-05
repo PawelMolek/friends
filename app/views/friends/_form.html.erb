@@ -10,24 +10,24 @@
       </ul>
     </div>
   <% end %>
-  <br/>  
+  <br/>
   <div class="mb-3">
-    <%= form.text_field :first_name, class: "form-control", placeholder:"First Name" %>
+    <%= form.text_field :first_name, class: "form-control", placeholder: "First Name", required: true %>
   </div>
   <div class="mb-3">
-    <%= form.text_field :last_name, class: "form-control", placeholder:"Last Name"%>
+    <%= form.text_field :last_name, class: "form-control", placeholder: "Last Name", required: true %>
   </div>
   <div class="mb-3">
-    <%= form.text_field :email, class: "form-control", placeholder:"Email" %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Email" %>
   </div>
   <div class="mb-3">
-    <%= form.text_field :phone, class: "form-control", placeholder:"Phone" %>
+    <%= form.text_field :phone, class: "form-control", placeholder: "Phone" %>
   </div>
   <div class="mb-3">
-    <%= form.text_field :twitter, class: "form-control", placeholder:"Twitter" %>
+    <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter" %>
   </div>
   <div class="mb-3">
-    <%= form.number_field :user_id, id: :friend_user_id, class: "form-control", value:current_user.id, type: :hidden %>
+    <%= form.number_field :user_id, id: :friend_user_id, class: "form-control", value: current_user.id, type: :hidden %>
   </div>
   <div>
     <%= form.submit class: 'btn btn-secondary' %>
