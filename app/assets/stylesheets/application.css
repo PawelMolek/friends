@@ -14,3 +14,22 @@
  *= require_self
  */
 
+.col {
+    margin-top: 20%;
+}
+
+/*html {*/
+/*    position: relative;*/
+/*}*/
+
+/*body {*/
+/*    margin-bottom: 60px;*/
+/*}*/
+
+/*.footer{*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    height: 60px;*/
+/*}*/
+

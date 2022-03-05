@@ -3,10 +3,21 @@
     <div class="card-header">
       <h4><%= @friend.first_name + ' ' + @friend.last_name %></h4>
     </div>
-    <div class="card-body">
-      <p>E-mail : <%= @friend.email %></p>
-      <p>Phone : <%= @friend.phone %></p>
-      <p>Twitter : <%= @friend.twitter %></p>
+    <div class="card-body text-start">
+      <table>
+        <tr>
+          <td><b>E-mail : </b></td>
+          <td><%= @friend.email %></td>
+        </tr>
+        <tr>
+          <td><b>Phone : </b></td>
+          <td><%= @friend.phone %></td>
+        </tr>
+        <tr>
+          <td><b>Twitter : </b></td>
+          <td><%= @friend.twitter %></td>
+        </tr>
+      </table>
     </div>
   </div>
 
