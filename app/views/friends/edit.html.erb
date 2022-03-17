@@ -16,6 +16,5 @@
 
   <br/>
 
-  <%= button_to "Delete", friend_path(@friend), form: { data: { turbo_confirm: "Are you sure?" } }, method: :delete, class: "btn btn-danger" %>
-
+  <%= button_to "Delete", friend_path(@friend), form: { data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } }, class: "btn btn-danger" %>
 </div>
